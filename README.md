@@ -2,12 +2,12 @@
 
 A dark industrial-themed MCP App that displays your Proton Calendar events directly in Claude Desktop.
 
-![Metalheart Theme](https://img.shields.io/badge/theme-metalheart-orange)
+![Dark Theme](https://img.shields.io/badge/theme-dark%20industrial-orange)
 ![Node](https://img.shields.io/badge/node-%3E%3D20-green)
 
 ## Features
 
-- Dark industrial "Metalheart" UI design
+- Dark industrial UI design
 - Monthly calendar view with event indicators
 - Upcoming events list
 - Click on any day to see its events
