@@ -5,6 +5,8 @@ A dark industrial-themed MCP App that displays your Proton Calendar events direc
 ![Dark Theme](https://img.shields.io/badge/theme-dark%20industrial-orange)
 ![Node](https://img.shields.io/badge/node-%3E%3D20-green)
 
+![Screenshot](assets/screenshot.png)
+
 ## Features
 
 - Dark industrial UI design
