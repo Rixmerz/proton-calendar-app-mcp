@@ -1,0 +1,66 @@
+:root {
+  /* Metalheart Dark Industrial Palette */
+  --color-background: #0a0a0b;
+  --color-surface: #141416;
+  --color-surface-elevated: #1a1a1d;
+  --color-text: #e8e8e8;
+  --color-text-secondary: #7a7a7d;
+  --color-text-muted: #4a4a4d;
+
+  /* Metallic accents */
+  --color-metal: #2a2a2d;
+  --color-metal-light: #3a3a3d;
+  --color-metal-shine: #4a4a50;
+
+  /* Fire/Heat accents */
+  --color-accent: #e85a2c;
+  --color-accent-hot: #ff6b35;
+  --color-accent-glow: #ff8c42;
+  --color-accent-ember: #c44d22;
+
+  /* Industrial borders */
+  --color-border: #2a2a2d;
+  --color-border-strong: #3a3a3d;
+
+  /* Status */
+  --color-error: #dc2626;
+  --color-success: #16a34a;
+
+  --spacing-xs: 4px;
+  --spacing-sm: 8px;
+  --spacing-md: 16px;
+  --spacing-lg: 24px;
+  --spacing-xl: 32px;
+
+  --border-radius-sm: 4px;
+  --border-radius-md: 8px;
+  --border-radius-lg: 12px;
+
+  --font-family: 'Inter', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: var(--font-family);
+  background: var(--color-background);
+  color: var(--color-text);
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+}
+
+#app {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  padding: var(--spacing-md);
+  background:
+    radial-gradient(ellipse at top, rgba(232, 90, 44, 0.03) 0%, transparent 50%),
+    var(--color-background);
+}

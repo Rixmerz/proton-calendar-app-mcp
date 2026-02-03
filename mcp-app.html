@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Calendar Dashboard</title>
+    <link rel="stylesheet" href="./src/global.css" />
+    <link rel="stylesheet" href="./src/mcp-app.css" />
+    <script type="module" src="./src/mcp-app.ts"></script>
+  </head>
+  <body>
+    <div id="app">
+      <div class="calendar-container">
+        <!-- Header -->
+        <div class="calendar-header">
+          <h1>METALHEART CALENDAR</h1>
+          <div class="month-nav">
+            <button id="prev-month" class="nav-btn">←</button>
+            <span id="current-month">Loading...</span>
+            <button id="next-month" class="nav-btn">→</button>
+          </div>
+          <div class="event-count" id="event-count"></div>
+        </div>
+
+        <!-- Loading state -->
+        <div class="loading" id="loading">
+          <div class="spinner"></div>
+          <p>Loading calendar...</p>
+        </div>
+
+        <!-- Calendar grid -->
+        <div class="calendar-content" id="content" style="display: none;">
+          <div class="weekdays">
+            <span>Sun</span>
+            <span>Mon</span>
+            <span>Tue</span>
+            <span>Wed</span>
+            <span>Thu</span>
+            <span>Fri</span>
+            <span>Sat</span>
+          </div>
+          <div class="days-grid" id="days-grid"></div>
+        </div>
+
+        <!-- Events list -->
+        <div class="events-section" id="events-section" style="display: none;">
+          <h2 id="events-title">Upcoming Events</h2>
+          <div class="events-list" id="events-list"></div>
+        </div>
+
+        <!-- Error state -->
+        <div class="error" id="error" style="display: none;">
+          <span class="error-icon">⚠️</span>
+          <p id="error-message">Error loading calendar</p>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

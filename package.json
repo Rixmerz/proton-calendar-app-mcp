@@ -1,0 +1,25 @@
+{
+  "name": "proton-calendar-app-mcp",
+  "version": "1.0.0",
+  "type": "module",
+  "description": "MCP App with dark industrial UI to display Proton Calendar events",
+  "main": "dist/index.js",
+  "scripts": {
+    "build": "npx tsc -p tsconfig.server.json && cross-env INPUT=mcp-app.html npx vite build && bun build main.ts --outfile dist/index.js --target node --banner \"#!/usr/bin/env node\""
+  },
+  "dependencies": {
+    "@modelcontextprotocol/ext-apps": "^1.0.0",
+    "@modelcontextprotocol/sdk": "^1.24.0",
+    "zod": "^3.24.0"
+  },
+  "devDependencies": {
+    "@types/node": "22.10.0",
+    "cross-env": "^7.0.3",
+    "typescript": "^5.9.3",
+    "vite": "^6.0.0",
+    "vite-plugin-singlefile": "^2.3.0"
+  },
+  "bin": {
+    "calendar-mcp": "dist/index.js"
+  }
+}
